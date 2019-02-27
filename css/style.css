@@ -1093,7 +1093,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-about h3 {
-  font-size: 36px;
+  font-size: 30px;
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1;
@@ -1101,7 +1101,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 300;
   letter-spacing: 3px;
   color: #1dc8cd;
-  
+
 }
 
 #contact .contact-about p {
