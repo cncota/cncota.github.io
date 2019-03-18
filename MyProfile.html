@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VivoState: My Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="SlideMenu.css">
+    <script script type="text/javascript" src="SlideMenu.js"></script>
+    <script script type="text/javascript" src="test2.js"></script>
+    <script script type="text/javascript" src="profile.json"></script>
+  </head>
+  <body>
+    <div class="sidenav" id="mySidenav"><a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a><a class="largeMenuItem" href="dashboard.html">Dashboard</a><a class="largeMenuItem" href="devices.html">Device Status</a><a class="largeMenuItem" href="DeviceEvents.html">Device Events</a><a class="largeMenuItem" href="ProvisionSingleDevice.html">Provision Device</a><a class="largeMenuItem" href="MyProfile.html">My Profile</a><a class="smallMenuItem" href="#">Settings</a><a class="smallMenuItem" href="#">Support</a></div>
+    <div class="main">
+      <div class="topnav">
+        <button class="btn btn-lg menubtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container"> 
+            <h3>My Profile</h3>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <h5>Basic Information</h5>
+        <div class="container">
+          <div class="row">  
+            <div class="col-4">
+              <label for="comp">Company:</label>
+            </div>
+            <div class="col-2">
+              <label id="comp"> </label>
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-4">
+              <label for="fname">First Name:</label>
+            </div>
+            <div class="col-2">
+              <input id="fname" type="text" name="fame">
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-4">
+              <label for="lname">Last Name:</label>
+            </div>
+            <div class="col-2">
+              <input id="lname" type="text" name="lame">
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-4">
+              <label for="role">Role:</label>
+            </div>
+            <div class="col-2">
+              <label id="role">User</label>
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-4">
+              <label for="phone">Phone Number:</label>
+            </div>
+            <div class="col-2">
+              <input id="phone" type="text" name="phon">
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-2">
+              <label for="email">Email:</label>
+            </div>
+            <div class="col-1">
+              <label id="role"> </label>
+            </div>
+          </div>
+        </div>
+        <h5>Alerting</h5>
+        <div class="container">
+          <input class="form-check-input" id="Check1input" type="checkbox">
+          <label id="check">Disable any future Alerts</label>
+        </div>
+        <h5>Basic Information</h5>
+        <div class="container">
+          <div class="row">  
+            <div class="col-5">
+              <label for="curpass">Current Password:</label>
+            </div>
+            <div class="col-1">
+              <input id="curpass" type="text" name="crpss">
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-5">
+              <label for="newpass">New Password:</label>
+            </div>
+            <div class="col-1">
+              <input id="newpass" type="text" name="npss">
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-5">
+              <label for="cpass">Confirm Password:</label>
+            </div>
+            <div class="col-1">
+              <input id="cpass" type="text" name="cpss">
+            </div>
+          </div>
+          <div class="row">  
+            <div class="col-5">
+              <button class="btn btn-success" type="button">Save Changes</button>
+            </div>
+            <div class="col-1">
+              <button class="btn btn-danger" type="button">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
