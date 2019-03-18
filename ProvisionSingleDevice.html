@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Provision A Single Device</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="SlideMenu.css">
+    <script script type="text/javascript" src="SlideMenu.js"></script><script script type="text/javascript" src="ProvisionSingleDevice.js"></script>
+  </head>
+  <body>
+    <div class="sidenav" id="mySidenav"><a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a><a class="largeMenuItem" href="dashboard.html">Dashboard</a><a class="largeMenuItem" href="devices.html">Device Status</a><a class="largeMenuItem" href="DeviceEvents.html">Device Events</a><a class="largeMenuItem" href="ProvisionSingleDevice.html">Provision Device</a><a class="largeMenuItem" href="MyProfile.html">My Profile</a><a class="smallMenuItem" href="#">Settings</a><a class="smallMenuItem" href="#">Support</a></div>
+    <div class="main">
+      <div class="topnav">
+        <button class="btn btn-lg menubtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container"> 
+            <h3>Provision a Single Device</h3>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <h5>Device Information</h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <label>Model #</label>
+            </div>
+            <div class="col-9">
+              <div class="input-group mb-3">
+                <input class="form-control" id="In1" type="text" value="">
+                <div class="input-group-append">
+                  <button class="btn btn-success" id="Btn1" type="button"><i class="fas fa-camera"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <label>Serial #</label>
+            </div>
+            <div class="col-9">
+              <div class="input-group mb-3">
+                <input class="form-control" id="In2" type="text" value="">
+                <div class="input-group-append">
+                  <button class="btn btn-success" id="Btn2" type="button"><i class="fas fa-camera"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <label>Asset ID</label>
+            </div>
+            <div class="col-9">
+              <div class="input-group mb-3">
+                <input class="form-control" id="In3" type="text" value="">
+                <div class="input-group-append">
+                  <button class="btn btn-success" id="Btn3" type="button"><i class="fas fa-camera"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h5>Location Information</h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <label>Reference Region</label>
+            </div>
+            <div class="col-7">
+              <select class="custom-select" id="inputGroupSelect">
+                <option selected>Please Select</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <label>Latitude</label>
+            </div>
+            <div class="col-9">
+              <input class="form-control" id="latID" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <label>Longitude</label>
+            </div>
+            <div class="col-9">
+              <input class="form-control" id="longID" type="text">
+            </div>
+          </div>
+          <button class="btn btn-success" type="button" onclick="longlat()">Get Long and Lat </button>
+        </div>
+      </div>
+      <div class="container">
+        <h5>Set Device Status</h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-1">
+              <input type="checkbox" aria-label="Checkbox for following text input">
+            </div>
+            <div class="col-1">
+              <label>Enable</label>
+            </div>
+          </div>
+        </div>
+        <h5>Note</h5>
+        <textarea class="form-control" id="NoteText" rows="3"></textarea>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-success btn-block" type="button">Provision Device</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-danger btn-block" type="button">Cancel Provision</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
