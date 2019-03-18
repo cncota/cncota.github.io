@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Device Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="SlideMenu.css">
+    <script script type="text/javascript" src="SlideMenu.js"></script>
+    <link rel="stylesheet" href="devicedetails_style.css">
+  </head>
+  <body>
+    <div class="sidenav" id="mySidenav"><a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a><a class="largeMenuItem" href="dashboard.html">Dashboard</a><a class="largeMenuItem" href="devices.html">Device Status</a><a class="largeMenuItem" href="DeviceEvents.html">Device Events</a><a class="largeMenuItem" href="ProvisionSingleDevice.html">Provision Device</a><a class="largeMenuItem" href="MyProfile.html">My Profile</a><a class="smallMenuItem" href="#">Settings</a><a class="smallMenuItem" href="#">Support</a></div>
+    <div class="main">
+      <div class="topnav">
+        <button class="btn btn-lg menubtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="container">
+        <h3 class="detTop">Device Detail for Product VP5300 #SPTP2-988-32-2C-0C Serial 75T317533</h3>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="nav-item nav-link active" id="nav-gen-tab" data-toggle="tab" href="#nav-gen" role="tab" aria-controls="nav-gen" aria-selected="true">Gen. Info</a><a class="nav-item nav-link" id="nav-heart-tab" data-toggle="tab" href="#nav-heart" role="tab" aria-controls="nav-heart" aria-selected="false">Heartbeat</a><a class="nav-item nav-link" id="nav-other-tab" data-toggle="tab" href="#nav-other" role="tab" aria-controls="nav-other" aria-selected="false">Other</a><a class="nav-item nav-link" id="nav-data-tab" data-toggle="tab" href="#nav-data" role="tab" aria-controls="nav-data" aria-selected="false">Data</a></div>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-gen" role="tabpanel" aria-labelledby="nav-gen-tab">
+            <h5>General Information</h5>
+            <div class="container">
+              <label>YourDevice ID:</label>
+              <label>Device ID Data</label>
+            </div>
+            <div class="container">
+              <label>Description:</label>
+              <label>CLT Terminal B Gate 57</label>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-heart" role="tabpanel" aria-labelledby="nav-heart-tab">
+            <h5>Heartbeat</h5>
+            <div class="container">
+              <label>Last Heartbeat Recieved:</label>
+              <label>15 October 2018 08:33:22</label>
+            </div>
+            <div class="container">
+              <label>Last Known Public IP Address:</label>
+              <label> <a>8.8.8.8</a></label>
+            </div>
+            <div class="container">
+              <label>Last Known Private IP Address:</label>
+              <label><a>10.0.0.125</a></label>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab">
+            <h5>Firmware</h5>
+            <div class="container">
+              <label>Firmware Version:</label>
+              <label><a>903345LDF94</a></label>
+            </div>
+            <div class="container">
+              <label>Last Firmware Update:</label>
+              <Label>N/A</Label>
+            </div>
+            <h5>Configuration</h5>
+            <div class="container">
+              <label>Last Configuration Update:</label>
+              <label>2018-08-03 04:55 by <a>Patty Smith</a></label>
+            </div>
+            <h5>Remote Key Injection</h5>
+            <div class="container">
+              <label>Last RKI:</label>
+              <label>N/A</label>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-data" role="tabpanel" aria-labelledby="nav-data-tab">
+            <div class="table-responsive">
+              <table>
+                <tr>
+                  <th>Last Status</th>
+                  <th>Last Heartbeat</th>
+                  <th>Heartbeat Age</th>
+                </tr>
+                <tr>
+                  <td>Connected</td>
+                  <td>2018-06-28 17:24:07 PDT</td>
+                  <td>3 mins</td>
+                </tr>
+                <tr> 
+                  <td>Connected</td>
+                  <td>2018-06-28 17:24:07 PDT</td>
+                  <td>30 mins</td>
+                </tr>
+                <tr>
+                  <td>RKI in progress</td>
+                  <td>2018-06-28 17:24:07 PDT</td>
+                  <td>2 hours</td>
+                </tr>
+                <tr> 
+                  <td>Offline</td>
+                  <td>2018-06-28 17:24:07 PDT</td>
+                  <td>1 day</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
